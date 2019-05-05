@@ -6,11 +6,11 @@ export default class HelloWebComponent extends LightningElement {
     currentDate = new Date().toDateString();
 
 
-    hangleGreetingChange(event){
+    handleGreetingChange(event){
         this.greeting = event.target.value;
     }
 
     get capitalizedGreeting() {
-	    return `Hello ${this.greeting.toUpperCase()}!`
+	return `Hello ${this.greeting.toUpperCase()}!`
     }   
 }
